@@ -6,7 +6,7 @@ import Contactpage from '../templates/contact'
 export default class Contact extends React.Component {
     static async getInitialProps () {
         const data = new Promise(resolve => {
-            var  Query = Stack.ContentType("contact").Query()
+            var  Query = Stack.ContentType("contact_hulevich").Query()
                 .includeReference('reference_header','reference_footer')
                 .toJSON()
                 .find()
