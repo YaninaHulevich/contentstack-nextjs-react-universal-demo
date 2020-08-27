@@ -16,7 +16,7 @@ app.prepare()
         const server = express()
         global['Stack'] = Contentstack.Stack({
             api_key: config.contentstack.api_key,
-            delivery_token: config.contentstack.access_token,
+            delivery_token: config.contentstack.delivery_token,
             environment: config.contentstack.environment
         });
         server.get('*', (req, res) => {

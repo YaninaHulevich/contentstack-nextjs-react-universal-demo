@@ -1,8 +1,8 @@
 require('dotenv').config();
 module.exports = {
-  contentstack: {
-    api_key: process.env.DB_USER,
-    access_token: process.env.DB_PASS,
-    environment: process.env.DB_HOST
-  }
+    contentstack: {
+        api_key: process.env.CS_API_KEY,
+        delivery_token: process.env.CS_TOKEN,
+        environment: process.env.CS_ENV
+    }
 }
