@@ -1,7 +1,8 @@
+require('dotenv').config();
 module.exports = {
     contentstack: {
-        api_key: 'Please Enter your stack api-key',
-        access_token: 'Please Enter your stack access-token',
-        environment: 'production'
+        api_key: process.env.CS_API_KEY,
+        delivery_token: process.env.CS_DELIVERY_TOKEN,
+        environment: process.env.CS_PRODUCTION_ENV
     }
 }

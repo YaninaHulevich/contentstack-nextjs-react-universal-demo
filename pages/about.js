@@ -6,7 +6,7 @@ import Aboutpage from '../templates/about'
 export default class About extends React.Component {
     static async getInitialProps () {
         const data = new Promise(resolve => {
-            var  Query = Stack.ContentType("about").Query()
+            var  Query = Stack.ContentType("about_hulevich").Query()
                 .includeReference('reference_header','reference_footer')
                 .toJSON()
                 .find()

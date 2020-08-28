@@ -3,7 +3,7 @@ import Homepage from '../templates/home'
 export default class Home extends React.Component {
   static async getInitialProps () {
       const data = new Promise(resolve => {
-          var  Query = Stack.ContentType("home").Query()
+          var  Query = Stack.ContentType("home_hulevich").Query()
               .includeReference('reference_header','reference_footer')
               .toJSON()
               .find()
