@@ -4,7 +4,7 @@ export default class Home extends React.Component {
   static async getInitialProps () {
       const data = new Promise(resolve => {
           var  Query = Stack.ContentType("home_hulevich").Query()
-              .includeReference('reference_header','reference_footer')
+              .includeReference('reference_header','reference_footer','reference_banner')
               .toJSON()
               .find()
               .then(function success(result) {

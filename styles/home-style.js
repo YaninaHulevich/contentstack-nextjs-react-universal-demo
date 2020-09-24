@@ -168,6 +168,58 @@ export default `
         text-align:center;
         line-height: 1.6;
     }
+    /* Banner Hulevich */
+    .banner-h{
+        padding: 0px;
+        background-color:rgba(5,55,64,1);
+    }
+    .banner-h h1{
+        text-transform: uppercase;
+        color: #23b9d0;
+    }
+    .banner-h h3{
+        color: rgba(255,255,255,0.6);
+        font-weight: 300;
+    }
+    .banner-h li{
+        width: 100%;
+        height:670px;
+        overflow:hidden;
+        position:relative;
+    }
+    .banner-h li:before{
+        content:'';
+        width:100%;
+        height:100%;
+        background:rgba(5,55,64,0.7);
+        position: absolute;
+        z-index:1;
+    }
+    .banner-h .button {
+        color: white;
+        color: white;
+        text-decoration: none;
+        padding: 2px 6px 2px 6px;
+        background-color: #23b9d0;
+    }
+    img.fullwidth{
+        width:100%;
+        height: auto;
+    }
+    .banner-content-h{
+        position:absolute;
+        width:100%;
+        max-width:600px;
+        margin:0 auto;
+        left:0;
+        right: 0;
+        top: 39%;
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        line-height: 1.6;
+    }
+    /* End of Banner Hulevich */
     .portpolio{
         background: #f8f8f8;
         position: relative;

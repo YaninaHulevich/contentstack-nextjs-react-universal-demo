@@ -1,6 +1,7 @@
 import React from 'react'
 import homestyle from '../styles/home-style'
 import Layout from '../partials/MyLayout'
+import Banner from '../components/Banner'
 
 export default class home extends React.Component {
 
@@ -27,21 +28,8 @@ export default class home extends React.Component {
             )
         });
 
-        const herobanner = page.hero_banner.map((item, index) => {
-            return (
-                <div key={index}>
-                    <ul>
-                        <li>
-                            <img className="fullwidth" src={item.image.url} />
-                            <div className="banner-content">
-                                <h1>{item.title}</h1>
-                                <h3>{item.description}</h3>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            )
-        });
+        const banner = <Banner item={page.reference_banner[0]} />
+
         const section_heading = page.section_heading.heading.map((heading, index) =>{
             return (
                 <div key={index} className="port-bx clearfix">
@@ -70,16 +58,15 @@ export default class home extends React.Component {
                     <main>
                         <div>
                             <div id="">
-                                <div className="hero-banner" id="">
-
-                                   {herobanner}
-                                </div>
                                 <div className="portpolio clearfix">
                                     <div className="container clearfix">
                                         <h1>{page.section_heading.title}</h1>
                                         <h2>{page.section_heading.description}</h2>
                                         {section_heading}
                                     </div>
+                                </div>
+                                <div className="banner-h" id="">
+                                    {banner}
                                 </div>
                             </div>
                         </div>
